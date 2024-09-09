@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ziyu Cui's Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html, body, h3, h4, h5, h6 {
+      font-family: Helvetica, Tahoma, sans-serif
+    }
+    h1, h2 {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 200px;
+      background: w3-light-grey;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 200px
+    }
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+    a.noline:link, a.noline:visited {
+        text-decoration: none;
+    }
+    a.noline:hover, a.noline:active {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-auto" style="max-width:1200px">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-card w3-text-grey">
+    <!-- Avatar image in top left corner -->
+    <img src="img\photo.jpg" style="width:80%" class="w3-circle w3-padding-large">
+    <br>
+    <br>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <h6><b>HOME</b></h6>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <h6><b>ABOUT</b></h6>
+    </a>
+    <a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey">
+      <i class="fa fa-file w3-xxlarge"></i>
+      <h6><b>PUBLICATIONS</b></h6>
+    </a>
+    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey">
+      <i class="fa fa-certificate w3-xxlarge"></i>
+      <h6><b>EDUCATION</b></h6>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#publications" class="w3-bar-item w3-button" style="width:25% !important">PUBLICATIONS</a>
+      <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+    </div>
+  </div>
+
+  <!-- Page Container -->
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header id="home" class="w3-display-container w3-card w3-white w3-margin-bottom">
+        <img src="img\light.jpg" style="width:100%" alt="light">
+        <div class="w3-display-left" style="margin-left:15%">
+          <h1 class="w3-text-black"><b>Ziyu Cui</b></h1>
+          <br>
+          <h5><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>PhD Student</h5>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>cuiziyu20@otcaix.iscas.ac.cn</p>
+        </div>
+        <!-- <hr> -->
+      </header>
+
+      <div id="about" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About
+        </h2>
+        <div class="w3-container">
+          <h5>I'm a fifth year PhD student under the supervision of <a
+              href="https://people.ucas.ac.cn/~weijun" class="w3-text-teal noline" target="_blank">Prof. Jun Wei</a> and <a
+              href="http://www.tcse.cn/~wsdou/" class="w3-text-teal noline" target="_blank">Prof. Wensheng Dou</a> in <a
+              href="http://www.is.cas.cn/" class="noline" target="_blank">Institute of Software,
+            Chinese Academy of Sciences (ISCAS)</a>.</h5>
+          <h5>My research interests include software engineering, software reliability testing especially in database
+            systems.</h5>
+          <hr>
+        </div>
+      </div>
+
+      <div id="publications" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-file fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications
+        </h2>
+        <div class="w3-container">
+          <h4><b><em>Understanding Transaction Bugs in Database Systems</em></b>
+            [<a href="papers/2024-icse-txbug.pdf" class="w3-text-teal noline" target="_blank">PDF</a>]
+			      [<a href="https://github.com/tcse-iscas/TXBug" class="w3-text-teal noline" target="_blank">Website</a>]
+          </h4>
+          <h5><b>Ziyu Cui</b>, Wensheng Dou, Yu Gao, Dong Wang, Jiansen Song, Yingying Zheng, Tao Wang, Rui Yang, Kang Xu, Yixin Hu, Jun Wei, Tao Huang</h5>
+          <h5>46th IEEE/ACM International Conference on Software Engineering
+            (<b>ICSE 2024</b>)</h5>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h4><b><em>Detecting Metadata-Related Logic Bugs in Database Systems via Raw Database Construction</em></b>
+			      [<a href="https://github.com/tcse-iscas/radar" class="w3-text-teal noline" target="_blank">Website</a>]
+          </h4>
+          <h5>Jiansen Song, Wensheng Dou, Yu Gao, <b>Ziyu Cui</b>, Yingying Zheng, Dong Wang, Wei Wang, Jun Wei, Tao Huang</h5>
+          <h5>50th International Conference on Very Large Data Bases
+            (<b>VLDB 2024</b>)</h5>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h4><b><em>Differential Optimization Testing of Gremlin-Based Graph Database Systems</em></b></h4>
+          <h5>Yingying Zheng, Wensheng Dou, Lei Tang, <b>Ziyu Cui</b>, Jiansen Song, Ziyue Cheng, Wei Wang, Jun Wei, Hua Zhong, Tao Huang</h5>
+          <h5>17th IEEE International Conference on Software Testing, Verification and Validation
+            (<b>ICST 2024</b>)</h5>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h4><b><em>Detecting Isolation Bugs via Transaction Oracle Construction</em></b>
+            [<a href="papers/2023-icse-troc.pdf" class="w3-text-teal noline" target="_blank">PDF</a>]
+			      [<a href="https://github.com/tcse-iscas/Troc" class="w3-text-teal noline" target="_blank">Website</a>]
+          </h4>
+          <h5>Wensheng Dou, <b>Ziyu Cui</b>, Qianwang Dai, Jiansen Song, Dong Wang, Yu Gao, Wei Wang, Jun Wei, Lei Chen, Hanmo Wang, Hua Zhong, Tao Huang</h5>
+          <h5>45th IEEE/ACM International Conference on Software Engineering
+            (<b>ICSE 2023</b>)</h5>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h4><b><em>Testing Database Systems via Differential Query Execution</em></b>
+            [<a href="papers/2023-icse-dqe.pdf" class="w3-text-teal noline" target="_blank">PDF</a>]
+			      [<a href="https://github.com/tcse-iscas/dqetool" class="w3-text-teal noline" target="_blank">Website</a>]
+          </h4>
+          <h5>Jiansen Song, Wensheng Dou, <b>Ziyu Cui</b>, Qianwang Dai, Wei Wang, Jun Wei, Hua Zhong, Tao Huang</h5>
+          <h5>45th IEEE/ACM International Conference on Software Engineering
+            (<b>ICSE 2023</b>)</h5>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h4><b><em>Differentially Testing Database Transactions for Fun and Profit</em></b>
+            [<a href="papers/2022-ase-dt2.pdf" class="w3-text-teal noline" target="_blank">PDF</a>]
+			      [<a href="papers/2022-ase-dt2.pptx" class="w3-text-teal noline" target="_blank">Slide</a>]
+			      [<a href="https://github.com/tcse-iscas/DT2" class="w3-text-teal noline" target="_blank">Website</a>]
+          </h4>
+          <h5><b>Ziyu Cui</b>, Wensheng Dou, Qianwang Dai, Jiansen Song, Wei Wang, Jun Wei, Dan Ye</h5>
+          <h5>37th IEEE/ACM International Conference on Automated Software Engineering
+            (<b>ASE 2022</b>)</h5>
+          <hr>
+        </div>
+      </div>
+
+      <div id="education" class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+        </h2>
+        <div class="w3-container">
+          <h4 class="w3-opacity"><b>Institute of Software, Chinese Academy of Sciences</b></h4>
+          <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2020 -
+            <span class="w3-tag w3-teal w3-round">Current</span>
+          </h5>
+          <h5>Ph.D. student in Software Engineering</h5>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h4 class="w3-opacity"><b>Beijing University of Technology</b></h4>
+          <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Jul 2020</h5>
+          <h5>B.E. in Information Security</h5>
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+
+</body>
+
+</html>
